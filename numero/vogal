@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de verificação de vogal</title>
+</head>
+<body>
+<h2>Programa de letras</h2>
+<form method="post">
+<input type="text" name="letra" placeholder="digite a letra">
+<button type="submit">Verificar</button>
+<hr>
+</form>        
+</body>
+<br><br>
+<?php
+if(isset($_POST["letra"]))
+  $letra=$_POST["letra"];
+  if($letra=="a" ){
+  echo "A letra é a vogal A"; 
+  }  
+
+else{    
+
+echo "A letra náo é a vogal A";
+}
+
+?> 
+</html>
